@@ -1,3 +1,0 @@
-class MarketScraper
-  
-end 
