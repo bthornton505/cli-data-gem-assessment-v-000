@@ -1,5 +1,6 @@
 # Our CLI Controller (responsible for business logic or user interactions)
 class FarmersMarkets::CLI 
+  attr_accessor :name  
   
   def call 
     list_markets
@@ -31,7 +32,7 @@ class FarmersMarkets::CLI
       elsif input == "list"
         list_markets
       else 
-        puts "Not really sure what you want..." unless "exit"
+        puts "Not really sure what you want..." #unless "exit"
       end 
     end
   end 
